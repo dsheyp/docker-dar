@@ -5,6 +5,7 @@ RUN apt-get update && \
     apt-get install -y --force-yes dar-static && \
     apt-get clean
 
-RUN mkdir /filetree
+RUN mkdir /root && mkdir /backup
 
-VOLUME /filetree
+VOLUME /root
+VOLUME /backup
