@@ -5,8 +5,10 @@ RUN apt-get update && \
     apt-get install -y --force-yes dar-static && \
     apt-get clean
 
-RUN mkdir /backup && mkdir /volume1 && mkdir /volume2
+RUN mkdir /backup && mkdir /homes && mkdir /video && mkdir /music && mkdir /photo
 
-VOLUME /volume1
-VOLUME /volume2
 VOLUME /backup
+VOLUME /homes
+VOLUME /video
+VOLUME /music
+VOLUME /photo
