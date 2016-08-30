@@ -21,6 +21,7 @@ ENV DAR_URL http://netcologne.dl.sourceforge.net/project/dar/dar/$DAR_VERSION/da
 RUN buildDeps=' \
 		curl \
 		gcc \
+		g++ \
 		binutils \
 		make \
 	' \
