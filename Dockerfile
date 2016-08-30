@@ -26,7 +26,7 @@ RUN buildDeps=' \
 	' \
 	set -x \
 	&& apt-get update \
-	&& apt-get install -y --no-install-recommends $buildDeps \
+	&& apt-get install -y $buildDeps \
 	&& rm -r /var/lib/apt/lists/* \
 	&& curl -SL "$DAR_URL" -o dar.tar.gz \
 	&& mkdir -p src/dar \
