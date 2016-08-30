@@ -10,9 +10,9 @@ WORKDIR $DAR_PREFIX
 # http://dar.linux.free.fr/doc/from_sources.html#requirements
 RUN apt-get update \
 	&& apt-get install -y --no-install-recommends \
-		zlib1g \
-		libgcrypt20 \
-		liblzo2-2 \
+		zlib1g zlib1g-dev \
+		libgcrypt20 libgcrypt20-dev \
+		liblzo2-2 liblzo2-dev \
 	&& rm -r /var/lib/apt/lists/*
 
 ENV DAR_VERSION 2.5.5
