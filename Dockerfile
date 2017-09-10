@@ -17,7 +17,7 @@ RUN apt-get update \
 		liblzo2-2 \
 	&& rm -r /var/lib/apt/lists/*
 
-ENV DAR_VERSION 2.5.5
+ENV DAR_VERSION 2.5.12
 ENV DAR_URL http://netcologne.dl.sourceforge.net/project/dar/dar/$DAR_VERSION/dar-$DAR_VERSION.tar.gz
 
 RUN buildDeps=' \
